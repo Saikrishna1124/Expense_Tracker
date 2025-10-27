@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Register</h2>
+<form method="POST">
+    <label>Username:</label>
+    <input type="text" name="username" required>
+
+    <label>Password:</label>
+    <input type="password" name="password" required>
+
+    <label>Currency:</label>
+    <select name="currency">
+        <option value="USD">USD ($)</option>
+        <option value="EUR">EUR (€)</option>
+        <option value="INR">INR (₹)</option>
+    </select>
+
+    <label>Monthly Budget:</label>
+    <input type="number" name="monthly_budget" required>
+
+    <button type="submit">Register</button>
+</form>
+{% endblock %}
